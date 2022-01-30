@@ -8,6 +8,7 @@
 2. Score calculation
 3. Reset button (Reset the game and score)
 4. Count attempted guesses
+5. Filter inappropriate input
 
 # Extra Functionalities
 1. Continous game play (Able to play next game without reset the game)
