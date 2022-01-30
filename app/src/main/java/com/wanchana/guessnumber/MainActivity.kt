@@ -42,8 +42,7 @@ class MainActivity : AppCompatActivity() {
             }catch (nfe: NumberFormatException){ }
             score.text = scored.toString()
             if ((number > 1000) or (number < 0)){
-                infoView.text = "Please provide number between 0 and 1000!"
-                Toast.makeText(this,"Enter number between 0 and 1000 only",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Please provide number between 0-1000!",Toast.LENGTH_LONG).show()
                 editTextNumber.text.clear()
             }
             else if (number < randomed){
@@ -59,6 +58,7 @@ class MainActivity : AppCompatActivity() {
                 scored += 1
                 score.text = scored.toString()
                 attempted_number = 0
+                randomed = nextInt(0,1000)
             }
             attempted.text = attempted_number.toString()
         }
@@ -68,6 +68,8 @@ class MainActivity : AppCompatActivity() {
             infoView.text = "Guess number between 0 and 1000!"
             editTextNumber.text.clear()
             scored = 0
+            attempted_number = 0
+            attempted.text = attempted_number.toString()
         }
 
     }
