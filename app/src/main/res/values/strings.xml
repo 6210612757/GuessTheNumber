@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GuessNumber</string>
+    <string name="guess_the_number">Guess The Number</string>
+    <string name="checkbutton">checkButton</string>
+    <string name="resetbutton">resetButton</string>
+    <string name="scoreText">Score</string>
+    <string name="score">score</string>
+    <string name="info">info</string>
+    <string name="infoView" />
+    <string name="attemptedText">Attempted :</string>
+    <string name="attempted">0</string>
+</resources>
