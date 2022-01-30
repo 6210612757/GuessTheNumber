@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         score = findViewById(R.id.score)
         attempted = findViewById(R.id.attempted)
         score.text = "Not yet start"
-        infoView.text = "Guess number between 0 and 100!"
+        infoView.text = "Guess number between 0 and 1000!"
 
         checkButton.setOnClickListener {
             var number: Int = -1
@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
             score.text = scored.toString()
             if ((number > 1000) or (number < 0)){
                 infoView.text = "Please provide number between 0 and 1000!"
+                Toast.makeText(this,"Enter number between 0 and 1000 only",Toast.LENGTH_SHORT).show()
                 editTextNumber.text.clear()
             }
             else if (number < randomed){
@@ -64,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         resetButton.setOnClickListener{
             randomed = nextInt(1,1000)
             score.text = "Not yet start"
-            infoView.text = "Guess number between 0 and 100!"
+            infoView.text = "Guess number between 0 and 1000!"
             editTextNumber.text.clear()
             scored = 0
         }

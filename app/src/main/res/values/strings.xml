@@ -9,4 +9,5 @@
     <string name="infoView" />
     <string name="attemptedText">Attempted :</string>
     <string name="attempted">0</string>
+    <string name="guessMe">Guess me from 0-1000</string>
 </resources>
