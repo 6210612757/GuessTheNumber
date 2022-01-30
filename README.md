@@ -12,3 +12,5 @@
 # Extra Functionalities
 1. Continous game play (Able to play next game without reset the game)
 2. Count attempted guesses per one number and reset when won
+
+DEMO : [youtube](https://youtu.be/sYwXNV7lIu0)
